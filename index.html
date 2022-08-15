@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/libraries/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/libraries/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/libraries/slick.css">
+    <link rel="stylesheet" href="assets/libraries/flickity.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Trvel</title>
+</head>
+
+<body>
+    <section class="menu-mobile">
+        <div class="menu-mobile-inner">
+            <div class="menu-mobile-account d-flex align-items-center position-relative">
+                <div class="menu-mobile-close position-absolute d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="menu-mobile-account__avatar d-flex align-items-center justify-content-center">
+                    <svg viewBox="0 0 512 512">
+                        <path
+                            d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z"
+                            data-original="#222222" class="active-path" fill="#222222"></path>
+                    </svg>
+                </div>
+                <ul class="list-unstyled d-flex align-items-center mb-0 justify-content-evenly">
+                    <li>
+                        <a href="">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current-menu-item">
+                        <a href="#">Home page</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Destinations</a>
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="#">VietNam</a>
+                                <ul>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Itineraries</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Signature Experiences</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Preferred Hotels</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Thailand</a>
+                                <ul>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Itineraries</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Signature Experiences</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Preferred Hotels</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Malaysia</a>
+                                <ul>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Itineraries</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Signature Experiences</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Preferred Hotels</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Styles of Travel</a>
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="#">SHORT JOURNEYS</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">GOLF</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">SHORT JOURNEYS</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">GOLF</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">About</a>
+                        <ul>
+                            <li class="menu-item-has-children"><a href="">Who were are</a></li>
+                            <li class="menu-item-has-children"><a href="">Conact Us</a></li>
+                            <li class="menu-item-has-children"><a href="">Our people</a></li>
+                            <li class="menu-item-has-children"><a href="">Subscribe</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Responsible Travel</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+            </nav>
+        </div>
+    </section>
+    <section class="search">
+        <div class="show-search">
+            <div class="search-wrap">
+                <div class="search">
+                    <div class="close-search">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                    <h2>Tìm kiếm</h2>
+                    <div class="search-input">
+                        <form action="#">
+                            <input type="text" placeholder="Tìm kiếm...">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="overlay"></div>
+    <header id="header" class="header">
+        <div class="header-outer">
+            <div class="container container-flex">
+                <div class="header-inter">
+                    <div class="header-logo">
+                        <img src="assets/images/logo/logo-header.png" alt="">
+                    </div>
+                    <div class="header-right">
+                        <div class="header-menu">
+                            <ul class="menu-center">
+                                <li class="menu-item"><a href="#">DESTINATIONS</a>
+                                    <ul class="sub-menu sub-menu-1">
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/destinationmenu-vietnam.jpg"
+                                                            alt="">
+                                                        <h2>VietNam</h2>
+                                                    </a>
+                                                </div>
+                                                <div class="item-bottom">
+                                                    <a href="#">Itineraries</a>
+                                                    <a href="#">Signature Experiences</a>
+                                                    <a href="#">Preferred Hotels</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/destinationmenu-vietnam.jpg"
+                                                            alt="">
+                                                        <h2>VietNam</h2>
+                                                    </a>
+                                                </div>
+                                                <div class="item-bottom">
+                                                    <a href="#">Itineraries</a>
+                                                    <a href="#">Signature Experiences</a>
+                                                    <a href="#">Preferred Hotels</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/destinationmenu-vietnam.jpg"
+                                                            alt="">
+                                                        <h2>VietNam</h2>
+                                                    </a>
+                                                </div>
+                                                <div class="item-bottom">
+                                                    <a href="#">Itineraries</a>
+                                                    <a href="#">Signature Experiences</a>
+                                                    <a href="#">Preferred Hotels</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/destinationmenu-vietnam.jpg"
+                                                            alt="">
+                                                        <h2>VietNam</h2>
+                                                    </a>
+                                                </div>
+                                                <div class="item-bottom">
+                                                    <a href="#">Itineraries</a>
+                                                    <a href="#">Signature Experiences</a>
+                                                    <a href="#">Preferred Hotels</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/destinationmenu-vietnam.jpg"
+                                                            alt="">
+                                                        <h2>VietNam</h2>
+                                                    </a>
+                                                </div>
+                                                <div class="item-bottom">
+                                                    <a href="#">Itineraries</a>
+                                                    <a href="#">Signature Experiences</a>
+                                                    <a href="#">Preferred Hotels</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/destinationmenu-vietnam.jpg"
+                                                            alt="">
+                                                        <h2>VietNam</h2>
+                                                    </a>
+                                                </div>
+                                                <div class="item-bottom">
+                                                    <a href="#">Itineraries</a>
+                                                    <a href="#">Signature Experiences</a>
+                                                    <a href="#">Preferred Hotels</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="#">Styles of Travel</a>
+                                    <ul class="sub-menu sub-menu-2">
+                                        <li class="menu-item">
+                                            <div class="list-style-img">
+                                                <img src="/assets/images/img-menu/icon-short-journeys.png" alt="">
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#">SHORT JOURNEYS</a>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="list-style-img">
+                                                <img src="/assets/images/img-menu/icon-golf.png" alt="">
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#">GOLF</a>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="list-style-img">
+                                                <img src="/assets/images/img-menu/icon-short-journeys.png" alt="">
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#">SHORT JOURNEYS</a>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="list-style-img">
+                                                <img src="/assets/images/img-menu/icon-golf.png" alt="">
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#">GOLF</a>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="list-style-img">
+                                                <img src="/assets/images/img-menu/icon-short-journeys.png" alt="">
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#">SHORT JOURNEYS</a>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="list-style-img">
+                                                <img src="/assets/images/img-menu/icon-golf.png" alt="">
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#">GOLF</a>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="list-style-img">
+                                                <img src="/assets/images/img-menu/icon-short-journeys.png" alt="">
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#">SHORT JOURNEYS</a>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="list-style-img">
+                                                <img src="/assets/images/img-menu/icon-golf.png" alt="">
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#">GOLF</a>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="list-style-img">
+                                                <img src="/assets/images/img-menu/icon-short-journeys.png" alt="">
+                                            </div>
+                                            <div class="item-link">
+                                                <a href="#">SHORT JOURNEYS</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="#">ABOUT</a>
+                                    <ul class="sub-menu sub-menu-3">
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/whoweare.jpg" alt="">
+                                                        <h2>WHO WE ARE</h2>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/whoweare.jpg" alt="">
+                                                        <h2>WHO WE ARE</h2>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/whoweare.jpg" alt="">
+                                                        <h2>WHO WE ARE</h2>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/whoweare.jpg" alt="">
+                                                        <h2>WHO WE ARE</h2>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/whoweare.jpg" alt="">
+                                                        <h2>WHO WE ARE</h2>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="wrap-item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="assets/images/img-menu/whoweare.jpg" alt="">
+                                                        <h2>WHO WE ARE</h2>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="#">Responsible Travel</a></li>
+                                <li class="menu-item"><a href="#">BLOG</a></li>
+                            </ul>
+                            <ul class="search">
+                                <li class="button-search"><i class="fa-solid fa-magnifying-glass"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-button">
+                            <div class="button-contact">
+                                <a href="#">
+                                    Inquire
+                                </a>
+                            </div>
+                            <div class="button-lang">
+                                <div class="lang-default">
+                                    <p>English<i class="fa-solid fa-caret-down"></i></p>
+                                    <ul class="ul-lang">
+                                        <li>
+                                            <a href="abc.com">
+                                                <span>English </span>
+                                                <span>
+                                                    <img src="assets/images/img-menu/lang-eng.svg" width="35px" alt="">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="abc.com">
+                                                <span>VietNam </span>
+                                                <span>
+                                                    <img src="assets/images/img-menu/lang-vn.svg" width="35px" alt="">
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="nav-bar-mobile">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-index">
+        <!-- Slide banner -->
+        <section class="video-banner">
+            <div class="banner-slide">
+                <div class="slide-item">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="/assets/images/video-banner/video.mp4" type="video/mp4">
+                    </video>
+                    <div class="slide-content">
+                        <div class="slide-content-content">
+                            <h2>Experience the <br>
+                                magic of asia
+                            </h2>
+                        </div>
+                        <div class="slide-content-search">
+                            <form action="#">
+                                <div class="form-search">
+                                    <select id="cars" name="carlist" form="carform">
+                                        <option value="volvo">Destinations</option>
+                                        <option value="saab">Vietnam</option>
+                                        <option value="opel">Myanmar</option>
+                                        <option value="audi">Laos</option>
+                                        <option value="opel">Cambodia</option>
+                                        <option value="audi">Thailand</option>
+                                        <option value="opel">Multi-Destination</option>
+                                    </select>
+                                    <select id="cars2" name="carlist2" form="carform2">
+                                        <option value="volvo2">Styles of Travel</option>
+                                        <option value="saab2">Classic Journeys</option>
+                                        <option value="opel2">Responsible Travel</option>
+                                        <option value="audi2">River Cruising</option>
+                                        <option value="opel2">Active Travel</option>
+                                        <option value="audi2">Culinary</option>
+                                        <option value="opel2">Deluxe</option>
+                                    </select>
+                                    <button type="button">SEARCH</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="slide-item">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="/assets/images/video-banner/Pexels Videos 2141798.mp4" type="video/mp4">
+                    </video>
+                    <div class="slide-content">
+                        <div class="slide-content-content">
+                            <h2>Experience the <br>
+                                magic of asia
+                            </h2>
+                        </div>
+                        <div class="slide-content-search">
+                            <form action="#">
+                                <div class="form-search">
+                                    <select id="cars" name="carlist" form="carform">
+                                        <option value="volvo">Destinations</option>
+                                        <option value="saab">Vietnam</option>
+                                        <option value="opel">Myanmar</option>
+                                        <option value="audi">Laos</option>
+                                        <option value="opel">Cambodia</option>
+                                        <option value="audi">Thailand</option>
+                                        <option value="opel">Multi-Destination</option>
+                                    </select>
+                                    <select id="cars2" name="carlist2" form="carform2">
+                                        <option value="volvo2">Styles of Travel</option>
+                                        <option value="saab2">Classic Journeys</option>
+                                        <option value="opel2">Responsible Travel</option>
+                                        <option value="audi2">River Cruising</option>
+                                        <option value="opel2">Active Travel</option>
+                                        <option value="audi2">Culinary</option>
+                                        <option value="opel2">Deluxe</option>
+                                    </select>
+                                    <button type="button">SEARCH</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- journey -->
+        <section class="journey">
+            <div class="journey-outer">
+                <div class="journey-inter">
+                    <div class="s-container container-journey">
+                        <div class="journey-content">
+                            <div class="content">
+                                <h2>A luxe experience</h2>
+                                <h1>SEE ASIA THROUGH A <br>
+                                    LOCAL LENS
+                                </h1>
+                                <p>Terraverde Travel is a Vietnam-based boutique destination management company. We
+                                    provide private deluxe journeys and immersive experiences in Vietnam, Laos, Myanmar,
+                                    Cambodia, and Thailand for travelers looking to go beyond the ordinary.
+                                </p>
+                                <p>
+                                    Born from our passion for Asia, Terraverde strives to show our captivating home in a
+                                    way that is both authentic and memorable.
+                                </p>
+                                <a href="#">Talk with us</a>
+                            </div>
+                        </div>
+                        <div class="content-img">
+                            <div class="img-div">
+                                <img src="assets/images/journey-pic-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- destination -->
+        <section class="destination">
+            <div class="destination-outer">
+                <div class="destination-inter">
+                    <div class="s-container">
+                        <div class="destination-heading">
+                            <h2>Our Destinations</h2>
+                            <h3>Discover Asia with us</h3>
+                        </div>
+                        <div class="destination-content">
+                            <div class="destination-item">
+                                <div class="img-item">
+                                    <a href="#">
+                                        <img src="/assets/images/vietnathumb.jpg" alt="">
+                                    </a>
+                                    <div class="title-item">
+                                        <a href="#">VietNam</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="destination-item">
+                                <div class="img-item">
+                                    <a href="#">
+                                        <img src="/assets/images/vietnathumb.jpg" alt="">
+                                    </a>
+                                    <div class="title-item">
+                                        <a href="#">VietNam</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="destination-item">
+                                <div class="img-item">
+                                    <a href="#">
+                                        <img src="/assets/images/vietnathumb.jpg" alt="">
+                                    </a>
+                                    <div class="title-item">
+                                        <a href="#">VietNam</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="destination-item">
+                                <div class="img-item">
+                                    <a href="#">
+                                        <img src="/assets/images/vietnathumb.jpg" alt="">
+                                    </a>
+                                    <div class="title-item">
+                                        <a href="#">VietNam</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/assets/libraries/jquery-3.6.0.min.js"></script>
+    <script src="assets/libraries/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/libraries/slick.min.js"></script>
+    <script src="assets/libraries/flickity.pkgd.min.js"></script>
+    <script src="/assets/libraries/bootstrap.bundle.min.js"></script>
+    <script src="/assets/libraries/wow.min.js"></script>
+    <script src="/assets/js/index.js"></script>
+</body>
+
+</html>

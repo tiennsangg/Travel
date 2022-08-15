@@ -1,0 +1,229 @@
+/* ===============================================> Slide banner <===============================================*/
+.main-index {
+    .video-banner {
+        .banner-slide {
+            .slide-item {
+                position: relative;
+                max-height: 100vh;
+                width: 100%;
+
+                video {
+                    width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
+                }
+
+                .slide-content {
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    text-align: center;
+
+                    .slide-content-content {
+                        h2 {
+                            color: white;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            font-size: 75px;
+                            line-height: 75px;
+                            letter-spacing: 3px;
+                            margin-bottom: 30px;
+                            text-shadow: 0 0 30px #000;
+                        }
+                    }
+
+                    .slide-content-search {
+                        .form-search {
+                            select {
+                                //https://stackoverflow.com/questions/1895476/how-do-i-style-a-select-dropdown-with-only-css
+                                background-color: #f1f1f1;
+                                cursor: pointer;
+                                color: #878787;
+                                padding: 0.5em 1em 0.5em 0.5em;
+                                border: 1px solid #eee; //xóa hoặc thay đổi border khi chưa click vào 
+                                -webkit-appearance: none; //Loại bỏ icon dropdown default của select
+                                appearance: none; //chưa rõ 
+                                background-repeat: no-repeat; //Thay thế icon dropdown và ko cho lặp
+                                background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%); //Thay thế icon dropdown
+                                background-position: right 15px top 1em, right 10px top 1em; //vị trí đặt icon mới
+                                background-size: 5px 5px, 5px 5px; //kích cỡ icon mới
+                                outline: none; //Loại bỏ viền khi click vào select hoặc button
+                            }
+
+                            button {
+                                color: #fff !important;
+                                font-weight: 600;
+                                background: #95b72f;
+                                padding: 8px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Flickity CSS
+.flickity-button:disabled {
+    opacity: 0;
+}
+
+.flickity-page-dots {
+    bottom: 20px;
+}
+
+.flickity-page-dots .dot {
+    width: 15px;
+    height: 15px;
+    background: white;
+}
+
+/* ===============================================> Journey <===============================================*/
+
+.journey {
+    &-outer {
+        .journey-inter {
+            .container-journey {
+                position: relative;
+            }
+            .journey-content {
+                width: 80%;
+                background: white;
+                box-shadow: 0 0 14px rgb(0 0 0 / 13%);
+                padding: 18px 40px 50px;
+                position: relative;
+                margin-top: -112px; 
+                .content {
+                    max-width: 506px;
+                    h2 {
+                        font-family: "Old Standard TT" !important;
+                        font-size: 30px;
+                        font-style: italic;
+                        color: #a39161 !important;
+                        margin-bottom: 8px;
+                    }
+
+                    h1 {
+                        font-size: 34px;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                        font-weight: 600;
+                        color: #000 !important;
+                        line-height: 42px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        color: #707070 !important;
+                        line-height: 24px;
+                        margin-bottom: 22px !important;
+                    }
+
+                    a {
+                        background: #a39161 !important;
+                        padding: 14px 28px 9px;
+                        color: #fff;
+                        display: inline-block;
+                        margin-top: 10px;
+                        transition: background-color 300ms ease-out 0s;
+                        font-weight: 300;
+                        font-family: 'Old Standard TT' !important;
+                        text-transform: none;
+                        font-size: 25px;
+                        font-style: italic;
+                        &:hover {
+                            background: #95b72f !important;
+                        }
+                    }
+                }
+
+            }
+            
+            .content-img {
+                max-width: 610px;    
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                right: 0;
+                .img-div {
+                    padding-top: 68.852%;
+                    position: relative;
+                    img {
+                        display: inline-block;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0%;
+                        left: 0%;
+                        object-fit: cover;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ===============================================> Destination <===============================================*/
+.destination {
+    padding-top: 110px;
+    &-outer{
+        .destination-inter {
+            .destination-heading {
+                text-align: center;
+                h2 {
+                    font-size: 36px;
+                    text-transform: uppercase;
+                    margin-bottom: 3px;
+                    font-weight: 700;
+                    line-height: 1.4;
+                }
+                h3 {
+                    font-family: 'Old Standard TT' !important;
+                    font-size: 26px;
+                    font-style: italic;
+                    margin-bottom: 8px;
+                    color: #a39161 !important;
+                    line-height: 1.4;
+                }
+            }
+            .destination-content {
+                display: flex;
+                flex-flow: row wrap;
+                .destination-item {
+                    width: 374px;
+                    .img-item {   
+                        margin: 18px;
+                        position: relative;
+                        box-shadow: 0 0 14px rgb(0 0 0 / 13%);
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 271px;
+                        }
+                        .title-item {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background-color: red;
+                            text-align: center;
+                            padding: 14px 0 16px;
+                            background: rgba(0,0,0,.80);
+                            a {
+                                color: #fff !important;
+                                font-size: 22px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
