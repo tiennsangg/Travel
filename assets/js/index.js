@@ -83,3 +83,51 @@ $(document).ready(function menuMobile() {
 
 }
 )
+
+function map() {
+    /**
+   * ---------------------------------------
+   * This demo was created using amCharts 4.
+   *
+   * For more information visit:
+   * https://www.amcharts.com/
+   *
+   * Documentation is available at:
+   * https://www.amcharts.com/docs/v4/
+   * ---------------------------------------
+   */
+
+    // Create map instance
+    var chart = am4core.create("chartdiv", am4maps.MapChart); //lấy chartdiv rồi tạo mapchart trong div
+
+    // Set map definition
+    chart.geodata = am4geodata_vietnamLow; //Sử dụng map ở Vietnam (phải kết nối file js của VN ở html bằng js <script src="https://www.amcharts.com/lib/4/geodata/vietnamLow.js"></script> của nước nào dùng nước đó hoặc của thế giới thì dùng worldLow, trong thư mục geodata sẽ có hết)
+    chart.geodataNames = am4geodata_lang_VI; //Ngon ngữ để sử dụng bản đồ (cũng phải kết nối file ngôn ngữ JS ở HTML <script src="https://www.amcharts.com/lib/4/geodata/lang/VI.js"></script>)
+
+    // Set projection
+    chart.projection = new am4maps.projections.Miller(); //tìm hiểu thêm
+
+    // Create map polygon series
+    var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+
+    // Exclude Antartica
+    polygonSeries.exclude = ["AQ"];
+
+    // Make map load polygon (like country names) data from GeoJSON
+    polygonSeries.useGeodata = true;
+
+    // Configure series
+    var polygonTemplate = polygonSeries.mapPolygons.template;
+    polygonTemplate.tooltipText = "{name}"; //Hover vào sẽ hiện tên các tỉnh
+    polygonTemplate.fill = am4core.color("gray"); //màu bản đồ
+
+    // Create hover state and set alternative fill color
+    var hs = polygonTemplate.states.create("hover"); //tạo ra hover
+    hs.properties.fill = am4core.color("aqua"); //thay đổi màu địa phận khi hover vào
+
+    chart.events.on("ready", function (ev) { //function chạy khi bắt đầu 
+        chart.zoomLevel = 5;
+        // chart.zoomToMapObject(polygonSeries.getPolygonById("VN-HN")); //function chạy sẽ zoom đến khu vực chỉ định theo id (xem trong file của các nước trong geodata)
+    });
+}
+map();
