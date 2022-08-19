@@ -125,9 +125,8 @@ function map() {
     var hs = polygonTemplate.states.create("hover"); //tạo ra hover
     hs.properties.fill = am4core.color("aqua"); //thay đổi màu địa phận khi hover vào
 
-    chart.events.on("ready", function (ev) { //function chạy khi bắt đầu 
-        chart.zoomLevel = 5;
-        // chart.zoomToMapObject(polygonSeries.getPolygonById("VN-HN")); //function chạy sẽ zoom đến khu vực chỉ định theo id (xem trong file của các nước trong geodata)
-    });
+    // chart.events.on("ready", function (ev) { //function chạy khi bắt đầu 
+    //     chart.zoomToMapObject(polygonSeries.getPolygonById("VN-HN")); //function chạy sẽ zoom đến khu vực chỉ định theo id (xem trong file của các nước trong geodata)
+    // });
 }
 map();
