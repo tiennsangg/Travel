@@ -1,0 +1,1 @@
+git config --get remote.origin.url - kiểm tra đường link git đang liên kết với project

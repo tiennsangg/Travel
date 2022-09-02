@@ -84,7 +84,7 @@
 
 .journey {
     &-outer {
-        .journey-inter {
+        .journey-inner {
             .container-journey {
                 position: relative;
             }
@@ -172,7 +172,7 @@
     padding-top: 110px;
     padding-bottom: 154px;
     &-outer{
-        .destination-inter {
+        .destination-inner {
             .destination-heading {
                 text-align: center;
                 h2 {
@@ -238,12 +238,13 @@
 .terraverde {
     &-outer {
         background-image: url(/assets/images/background-image1.jpg);
+        background-repeat: no-repeat;
         background-size: 100%;
         object-fit: cover;
         width: 100%;
         background-position: bottom;
         padding-bottom: 13%;
-        .terraverde-inter {
+        .terraverde-inner {
             .terraverde-row {
                 .col-fix {
                     padding-right: 0 !important;
@@ -298,8 +299,202 @@
         }
     }
 }
-  
-  #chartdiv {
-    width: 100%;
-  height: 95vh;
+
+/* ===============================================> Location map <===============================================*/
+  .map {
+    height: 500px;
+    background-color: #f0f7f7;
+    .map-row {
+        --bs-gutter-x: 0;
+    }
+    #chartdiv {
+      width: 100%;
+      height: 500px;
+      cursor: pointer;
+    }
+    .ampopup-content {
+      .button-content {
+          display: flex;
+          justify-content: center;
+      }
+      overflow: hidden;
+      strong {
+          color: #95b72f;
+      }
+      a {
+          text-align: center;
+          font-weight: 700;
+          font-size: 16px;
+      }
+    }
+    .location {
+        width: 48%;
+        .heading {
+            padding-top: 110px;
+            h2 {
+                font-size: 36px;
+                margin-bottom: 36px !important;
+                color: #000 !important;
+                text-transform: uppercase;
+                line-height: 1.4;
+            }
+        }
+        .location-text {
+            .ul-location {
+                display: flex;
+                flex-flow: row wrap;
+                li {
+                    width: 50%;
+                    line-height: 32px;
+                    a {
+                        color: #878787;
+                        &:hover {
+                            color: #95b72f;
+                        }
+                    }
+                }
+            }
+        }
+    }
   }
+
+  /* ===============================================> journey-collection <===============================================*/
+  .journey-collection {
+    padding: 60px 0;
+    background-color: #f3f3f3;
+    .outer-div {
+        .inner-div {
+            .collection-heading {
+                h2 {
+                    font-size: 36px;
+                    text-transform: uppercase;
+                    margin-bottom: 34px;
+                    text-align: center;
+                    font-weight: 900;
+                    color: #353b3d;
+                }
+            }
+            .collection-item {
+                display: flex;
+                .item {
+                    margin: 0 1% 50px;
+                    text-align: center;
+                    .item-img {
+                        width: 226px;
+                        height: 226px;
+                        border: 9px #fff solid;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 100%;
+                            transition: .8s;
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                    p {
+                        margin: 18px 0 0 !important;
+                        font-weight: 600;
+                        color: #000 !important;
+                        text-transform: uppercase;
+                        letter-spacing: 1.2px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .see-more {
+                text-align: center;
+                a {
+                    background: #a39161;
+                    color: #fff !important;
+                    text-transform: uppercase;
+                    font-size: 17px;
+                    font-weight: 500;
+                    font-family: 'Poppins', sans-serif;
+                    padding: 6px 18px 6px;
+                    transition: background-color 300ms ease-out 0s;
+                    letter-spacing: .5px;
+                    display: inline-block;
+                    margin-top: 0;
+                    line-height: 27px;
+                    &:hover {
+                        background-color: #95b72f;
+                    }
+                }
+            }
+        }
+    }
+  }
+
+/* ===============================================> travel-experts <===============================================*/
+.travel-experts {
+    .div-outer {
+        background-image: url(../images/background-image2.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 64px 0 80px !important;
+        .div-inner {
+            text-align: center;
+            p {
+                color: #fff !important;
+                font-size: 30px;
+                margin-bottom: 0px !important;
+                margin: 0 auto;
+            }
+            a {
+                background: #95b72f;
+                color: #fff !important;
+                font-size: 30px;
+                padding: 24px 62px;
+                text-transform: uppercase;
+                margin-top: 40px;
+                display: inline-block;
+                transition: background-color 300ms ease-out 0s;
+                font-weight: 600;
+                &:hover {
+                    background-color: #a39161 !important;
+                }
+            }
+        }
+    }
+}
+/* ===============================================> bottom-sec-content <===============================================*/
+.bottom-sec-content {
+    .div-outer {
+        .div-inner {
+            .item-content {
+                text-align: center;
+                img {
+                    margin: auto;
+                }
+                h2 {
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: #000;    
+                    line-height: 1.4;
+                    margin-top: 0;
+                    margin-bottom: 0.5rem;
+                }
+                p {
+                    font-size: 16px;
+                    color: #707070 !important;
+                    line-height: 24px;
+                    margin-bottom: 22px !important;
+                    text-rendering: optimizeLegibility; //giúp chữ nhìn dễ đọc hơn
+                }
+            }
+        }
+    }
+}
+/* ===============================================> Responsive <===============================================*/
+@media screen and (max-width:1399px) {
+    .journey-collection .outer-div .inner-div .collection-item {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
