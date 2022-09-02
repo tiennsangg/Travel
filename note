@@ -1,1 +1,3 @@
 git config --get remote.origin.url - kiểm tra đường link git đang liên kết với project
+
+Mỗi lần cập nhật lại project trên git hub ở máy khác thì phải dùng git push -f
